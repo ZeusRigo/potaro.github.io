@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Personal Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #36393e;
+            color: #181818;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        header {
+            background-color: #7289da;
+            color: #fff;
+            padding: 20px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+        }
+
+        nav {
+            display: flex;
+            background-color: #333;
+            padding: 10px;
+            width: 100%;
+            justify-content: space-around;
+            position: fixed;
+            top: 125px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border: 2px solid #333; /* Dark border */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden; /* To prevent image overflow */
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-left: 20px; /* Margin for the image on the right */
+            border: 4px solid #1e2124; /* Dark border around the image */
+        }
+
+        .text-container {
+            float: left;
+            width: calc(100% - 240px); /* Adjust the width as needed */
+        }
+
+        .circle-image {
+            border-radius: 50%; /* Make the image a perfect circle */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        section#homepage {
+            background-color: #7289da;
+            margin-top: 130px; /* Adjust based on your preference */
+            padding: 30px;
+            height: auto;
+            margin-left: 0; /* Updated margin-left to 0 */
+            margin-right: 0; /* Updated margin-right to 0 */
+        }
+
+        section#homepage .text-container {
+            color: #333; 
+        }
+
+        section#about,
+        section#resume,
+        section#portfolio,
+        section#contacts {
+            background-color: #7289da;
+            margin-left: 0; /* Updated margin-left to 0 */
+            margin-right: 0; /* Updated margin-right to 0 */
+        }
+
+        section#about h2,
+        section#resume h2,
+        section#portfolio h2,
+        section#contacts h2 {
+            border-bottom: 4px solid #000; /* Increase the border thickness for h2 elements */
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+
+        header h1 {
+            color: #333;
+            font-size: 3em;
+            font-family: 'Roman', sans-serif; /* Set the font family to Arial */
+        }
+
+        /* Added styles for contact information */
+        section#contacts p {
+            font-size: 1.2em;
+            margin-top: 15px;
+        }
+
+        section#contacts p span {
+            display: block;
+            margin-top: 8px;
+            font-size: 1.1em;
+            color: #1e2124; /* Dark color for email and phone number */
+            font-weight: bold; /* Make the font bold */
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Personal Website</h1>
+    </header>
+
+    <nav>
+        <a onclick="scrollToSection('homepage')">Homepage</a>
+        <a onclick="scrollToSection('about')">About Me</a>
+        <a onclick="scrollToSection('resume')">Resume</a>
+        <a onclick="scrollToSection('contacts')">Contacts</a>
+    </nav>
+
+    <section id="homepage">
+        <h2>Welcome to My Personal Website</h2>
+        <p>Hi there, my name is Zeus John Rigo, and I attend National University to study information technology. I have a strong interest in learning about the constantly changing field of technology and its applications as an IT student. I enjoy a challenge, and I'm always learning and adjusting to the ever-changing IT industry. I'm eager to share my knowledge and abilities, and I'm pursuing a career in the fascinating field of information technology.</p>
+        <img class="circle-image" src="sirigo.jpg" alt="My Profile">
+    </section>
+
+    <section id="about">
+        <h2>ABOUT ME</h2>
+        <h2 style="border-top: 4px solid #000; padding-top: 10px;">BACKGROUND</h2>
+        <p>I'm a 20 years old student Information Technology (IT) student at a university. Known for their enthusiasm and curiosity for technology, I'm traveling to discover the wide world of IT while continuously trying to learn new things and broaden my knowledge.
+        </p>
+        <h2 style="border-top: 4px solid #000; padding-top: 10px;">EDUCATION</h2>
+        <p>From 2016 to 2021, I attended Lagro High School, from which I graduated. Currently, I attend National University, where I am enrolled in an Information Technology course.  </p>
+        
+        <h2 style="border-top: 4px solid #000; padding-top: 10px;">SKILLS</h2>
+        <p> I often find comfort in the art of sketching and drawing during my free time or when I'm bored. Animation is a creative endeavor that I have experience with and found captivating in the past. These days, I primarily concentrate on digital art, where I get lost in the seemingly endless possibilities provided by technology. Although I have dabbled in traditional art, my current passion is the ever-changing and dynamic field of digital creativity.
+</p>
+        
+        <h2 style="border-top: 4px solid #000; padding-top: 10px;">HOBBIES</h2>
+        <p>My main pastime is playing video games; this is a hobby that I have incorporated into my life ever since I started my IT studies. But my interests go beyond just the digital world; I also enjoy using sketching and drawing to express my creativity, which helps me balance my tech-focused coursework with my artistic pursuits.
+        </p>
+    </section>
+
+    <section id="resume">
+        <h2>RESUME</h2>
+        <img src="ResumeZeus.jpg" alt="Resume">
+        <p><a href="ZjResume.pdf" download>Download PDF Resume</a></p>
+    </section>
+
+    <section id="contacts">
+        <h2>Contact Information</h2>
+        <p>Feel free to get in touch with me. You can reach me via email at <span>
+		rigozeusjohn@gmail.com</span> or by phone at <span>09081642987</span> Connect with me on social media for more updates.</p>
+    </section>
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
